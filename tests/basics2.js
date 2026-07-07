@@ -1,0 +1,52 @@
+const flag = true
+
+// expression become flage, not changing the variable value
+if(!flag)
+{
+    console.log("condition satisfied")
+}
+else
+{
+    console.log(flag)
+    console.log("condition NOT satisfied")
+}
+
+let i=0
+// while only use when condition is true
+while(i>10)
+{
+    i++
+    console.log(i)
+    // console.log(" i am inside while loop")
+
+}
+
+do
+{
+  i++
+} while(i>10); // ; means ending the loop
+console.log(i)
+
+// use for loop when you know how many times you want to run this loop
+// 2 and 5
+// from 1 to 10 give me common multiple values of 2 and 5
+console.log("********************************")
+let n=0
+for (let k=1; k<=100; k++)
+{
+    // if(k%2 == 0 && k%5 == 0) // '%' mod reminder, '=' is assignment, '==' comparing equality, '&&' means 'and'
+    if(k%2 == 0 && k%5 == 0)    // '||' means 'or' 
+    {
+        n++
+        console.log(k)
+        if (n==3)
+        break
+    }
+}
+
+let required = true
+while(required) 
+{
+    console.log(required)
+    required = false
+}
