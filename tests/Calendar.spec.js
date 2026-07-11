@@ -3,7 +3,7 @@ import{test, expect} from '@playwright/test';
 test('Calendar validations', async({page})=>
 {
 
-    // testing changes for PUSH
+    // testing changes for PULL_REGUEST
     const monthNumber = "6";
     const date = "15";
     const year = "2027";
